@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+    <head>
+        <style data-merge-styles="true">
+        </style>
+        <style data-merge-styles="true">
+        </style>
+        <title>Home_Page</title>
+        <!--  -->
+        <meta http-equiv="Content-Language" content="en-us" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <!--  -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!--  -->
+        <!--  -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+        <style>
+            * {
+            box-sizing: border-box;
+            }
+            .SliderTitle {
+            font-size: 20px;
+            text-align: center;
+            color: white;
+            }
+            .carousel-caption {
+            background-color: #2a2a2aa8;
+            }
+            .Separator {
+            width: 50%;
+            border: 3px solid #555555;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            /* my Additions Start */
+            margin-right: auto;
+            margin-left: auto;
+            }
+            /* box_three */
+            .box_three {
+            width: 375.33px;
+            height: 337.39px;
+            }
+            .box_one {
+            color: #fff;
+            text-align: right;
+            transition: background-color 0.8s ease;
+            overflow: hidden;
+            }
+            .col-md-4 box_one p {
+            text-align: justify;
+            color: black;
+            margin: 10px;
+            }
+            .box_one img {
+            max-width: 95%;
+            margin-left: 10px;
+            margin-right: 10px;
+            -moz-transition: all 0.3s;
+            -webkit-transition: all 0.3s;
+            transition: all 0.3s;
+            display: block;
+            margin: auto;
+            transition: background-color 0.8s ease;
+            }
+            .videoContainer iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 98%;
+            height: 100%;
+            box-shadow: 4px 4px 6px 1px #676766;
+            border-radius: 6px;
+            }
+            .videoContainer {
+            position: relative;
+            padding-bottom: 45%;
+            height: 0;
+            /*overflow: hidden;*/
+            }
+            hr {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border: 0;
+            border-top: 1px solid #eee;
+            }
+            /* إضافة كود صفحة تست */
+            .aGutters {
+            margin-top: 10px;
+            }
+            /*
+            img {
+            display: block;
+            margin: auto;
+            transition: background-color 0.8s ease;
+            max-width: 95%;
+            margin-left: 10px;
+            margin-right: 10px;
+            -moz-transition: all 0.3s;
+            -webkit-transition: all 0.3s;
+            transition: all 0.3s;
+            }
+            */
+            p {
+            text-align: justify;
+            color: black;
+            margin: 10px;
+            transition: background-color 0.8s ease;
+            }
+            /* Old Property Fom Anas */
+            .box_one {
+            transition: background-color 0.8s ease;
+            overflow: hidden;
+            margin: auto;
+            }
+            /* .box_one img {
+            max-width: 95%;
+            margin-left: 10px;
+            margin-right: 10px;
+            -moz-transition: all 0.3s;
+            -webkit-transition: all 0.3s;
+            transition: all 0.3s;
+            } */
+            .box_one:hover img {
+            transition: transform 2s, filter 1.5s ease-in-out;
+            transform-origin: center center;
+            filter: brightness(50%);
+            transform: scale(1.1);
+            }
+            .event:hover img {
+            /* -moz-transform: scale(1.1);
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1); */
+            /* تم تعطيل الظل */
+            /* box-shadow: -1px -1px 5px 0px #7ce0bf; */
+            transition: transform 2s, filter 1.5s ease-in-out;
+            transform-origin: center center;
+            filter: brightness(50%);
+            transform: scale(1.1);
+            }
+            .Separator {
+            width: 50%;
+            border: 3px solid #555555;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            /* my Additions Start */
+            margin-right: auto;
+            margin-left: auto;
+            }
+            .col div {
+            border-radius: 6px;
+            }
+            /* نهاية كود صفحة تست */
+        </style>
+        <!-- Single Code Start -->
+        <link href="css/business-frontpage.css" rel="stylesheet" />
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <script type="text/javascript">
+        function FP_swapImgRestore() {//v1.0
+            var doc = document, i; if (doc.$imgSwaps) {
+                for (i = 0; i < doc.$imgSwaps.length; i++) {
+                    var elm = doc.$imgSwaps[i]; if (elm) { elm.src = elm.$src; elm.$src = null; }
+                }
+                doc.$imgSwaps = null;
+            }
+        }
+        function FP_preloadImgs() {//v1.0
+            var d = document, a = arguments; if (!d.FP_imgs) d.FP_imgs = new Array();
+            for (var i = 0; i < a.length; i++) { d.FP_imgs[i] = new Image; d.FP_imgs[i].src = a[i]; }
+        }
+        function FP_swapImg() {//v1.0
+            var doc = document, args = arguments, elm, n; doc.$imgSwaps = new Array(); for (n = 2; n < args.length;
+                n += 2) {
+                elm = FP_getObjectByID(args[n]); if (elm) {
+                    doc.$imgSwaps[doc.$imgSwaps.length] = elm;
+                    elm.$src = elm.src; elm.src = args[n + 1];
+                }
+            }
+        }
+        function FP_getObjectByID(id, o) {//v1.0
+            var c, el, els, f, m, n; if (!o) o = document; if (o.getElementById) el = o.getElementById(id);
+            else if (o.layers) c = o.layers; else if (o.all) el = o.all[id]; if (el) return el;
+            if (o.id == id || o.name == id) return o; if (o.childNodes) c = o.childNodes; if (c)
+                for (n = 0; n < c.length; n++) { el = FP_getObjectByID(id, c[n]); if (el) return el; }
+            f = o.forms; if (f) for (n = 0; n < f.length; n++) {
+                els = f[n].elements;
+                for (m = 0; m < els.length; m++) { el = FP_getObjectByID(id, els[n]); if (el) return el; }
+            }
+            return null;
+        }images/
+        // -->
+        </script>
+        <!-- Single Code End -->
+    </head>
+    <body style="direction: rtl; text-align: right;">
+        <!-- NavBar Start -->
+        <!-- NavBar End -->
+        <!-- Carousel -->
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="5"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="6"></button>
+        </div>
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+        <div class="carousel-item active">
+        <!-- <img src="la.jpg" alt="Los Angeles" class="d-block w-100"> -->
+        <a href="https://vpbkc.kau.edu.sa/Pages-VPBKC-NEWS-00321250922-AR.aspx"><img style="width:100%;" alt="وكالة الجامعة للأعمال والابداع المعرفي" src="images/National_Day_92.jpg" /></a>
+        <div class="carousel-caption">
+        <p class="SliderTitle">
+        وكالة الجامعة للأعمال والإبداع المعرفي تحتفل بذكرى اليوم الوطني الـ92 لبلادنا الغالية
+        </p>
+        </div>
+        </div>
+        <div class="carousel-item">
+        <!-- <img src="la.jpg" alt="Los Angeles" class="d-block w-100"> -->
+        <a href="https://vpbkc.kau.edu.sa/Pages-VPBKC-NEWS-0216280322-AR.aspx"><img style="width:100%;" alt="وكالة الجامعة للأعمال والابداع المعرفي" src="images/News890.jpeg" /></a>
+        <div class="carousel-caption">
+        <p class="SliderTitle">
+        وكالة الجامعة للأعمال والإبداع المعرفي تحصل على شهادة الآيزو لنظام الجودة
+        </p>
+        </div>
+        </div>
+        <div class="carousel-item">
+        <!-- <img src="chicago.jpg" alt="Chicago" class="d-block w-100"> -->
+        <a href="https://vpbkc.kau.edu.sa/Pages-VPBKC-NEWS-2402220313-AR.aspx"><img style="width:100%;" alt="وكالة الجامعة للأعمال والابداع المعرفي" src="images/News889.jpeg" /></a>
+        <div class="carousel-caption">
+        <p class="SliderTitle">
+        تدشين برنامج صناعة الممارس المحترف المقدم من مركز الممارس المحترف بالجامعة لمنسوبي أمانة العاصمة المقدسة
+        </p>
+        </div>
+        </div>
+        <div class="carousel-item">
+        <!-- <img src="ny.jpg" alt="New York" class="d-block w-100"> -->
+        <a href="https://vpbkc.kau.edu.sa/Pages-VPBKC-NEWS-1202220204-AR.aspx"><img style="width:100%;" alt="وكالة الجامعة للأعمال والابداع المعرفي" src="images/News888.jpeg" /></a>
+        <div class="carousel-caption">
+        <p class="SliderTitle">
+        اتفاقية تعاون بين بيت خبرة العلوم الطبية التطبيقية ومركز الممارس المحترف
+        </p>
+        </div>
+        </div>
+        <!-- Start Addition New -->
+        <div class="carousel-item">
+        <!-- <img src="chicago.jpg" alt="Chicago" class="d-block w-100"> -->
+        <a href="https://vpbkc.kau.edu.sa/Pages-VPBKC-NEWS-2402220313-AR.aspx"><img style="width:100%;" alt="وكالة الجامعة للأعمال والابداع المعرفي" src="images/News887.jpeg" /></a>
+        <div class="carousel-caption">
+        <p class="SliderTitle">
+        عمادة خدمة المجتمع والتعليم المستمر تحتفي بخرّيجي البرامج التأهيلية السياحية
+        </p>
+        </div>
+        </div>
+        <div class="carousel-item">
+        <!-- <img src="chicago.jpg" alt="Chicago" class="d-block w-100"> -->
+        <a href="https://vpbkc.kau.edu.sa/Pages-VPBKC-NEWS-2402220313-AR.aspx"><img style="width:100%;" alt="وكالة الجامعة للأعمال والابداع المعرفي" src="images/News886.jpg" /></a>
+        <div class="carousel-caption">
+        <p class="SliderTitle">
+        اختتام ورش عمل " مشاركة الكليات في تنفيذ مبادرات خطة الاستدامة المالية
+        </p>
+        </div>
+        </div>
+        <div class="carousel-item">
+        <!-- <img src="chicago.jpg" alt="Chicago" class="d-block w-100"> -->
+        <a href="https://vpbkc.kau.edu.sa/Pages-VPBKC-NEWS-2402220313-AR.aspx"><img style="width:100%;" alt="وكالة الجامعة للأعمال والابداع المعرفي" src="images/News878.jpg" /></a>
+        <div class="carousel-caption">
+        <p class="SliderTitle">
+        قطاعات وكالة الجامعة للأعمال والإبداع المعرفي في أسبوع
+        </p>
+        </div>
+        </div>
+        <!-- End Addtion New -->
+        </div>
+        <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        </button>
+        </div>
+        <hr class="Separator" />
+        <!--
+         *************************************************************************
+         *************************************************************************
+         *************************************************************************
+         ***********************       (EVENTS)        ***************************
+         *************************************************************************
+         *************************************************************************
+         *************************************************************************
+    -->
+        <div class="container px-4 aGutters">
+        <h3 style="text-align: center;">فعالياتنا</h3>
+        <div class="row gx-3 ">
+        <div class="col ">
+        <div class="p-3 border bg-light event" style="text-align: center">
+        <img alt="فعاليات" src="images/Event180321.jpeg" />
+        <p>
+        برعاية معالي رئيس الجامعة وكيل الجامعة للأعمال والإبداع المعرفي يفتتح ملتقى الاستدامة المالية الثاني
+        <a href="https://vpbkc.kau.edu.sa/Pages-VPBKC-NEWS-1503211156.aspx" style="color:#555555;">
+        للمزيد
+        </a>
+        </p>
+        <!-- <hr /> -->
+        </div>
+        </div>
+        <div class="col">
+        <div class="p-3 border bg-light event" style="text-align: center">
+        <img alt="فعاليات" src="images/Event-061220-2.jpg" />
+        <p>
+        سعادة وكيل الجامعة للأعمال والإبداع المعرفي يدشّن النسخة التجريبية من موقع الوكالة الإلكتروني
+        <a href="https://vpbkc.kau.edu.sa/Pages-VPBKC-NEWS-1911200830.aspx" style="color:#555555;">
+        للمزيد
+        </a>
+        </p>
+        <br />
+        <!-- <hr /> -->
+        </div>
+        </div>
+        <div class="col">
+        <div class="p-3 border bg-light event" style="text-align: center">
+        <img alt="فعاليات " src="images/Event-061220-3.jpg" />
+        <p>
+        معالي رئيس الجامعة يرعى ورشة عمل "تطوير بيئة الاستثمار في جامعة الملك عبدالعزيز"
+        <a href="https://vpbkc.kau.edu.sa/Pages-VPBKC-NEWS-1410201859.aspx" style="color:#555555;">
+        للمزيد
+        </a>
+        </p>
+        <br />
+        <!-- <hr /> -->
+        </div>
+        </div>
+        </div>
+        </div>
+        <hr class="Separator" />
+        <!--
+         *************************************************************************
+         *************************************************************************
+         *************************************************************************
+         ***********************       (Strategic)        ************************
+         *************************************************************************
+         *************************************************************************
+         *************************************************************************
+    -->
+        <!-- الروؤية الرسالة الهدف -->
+        <div class="container px-4 aGutters">
+        <!-- <h3 style="text-align: center;">الإستراتيجيات</h3> -->
+        <div class="row gx-3 ">
+        <div class="col ">
+        <div class="p-3 border bg-light" style="border: 1px solid #26803d !important;">
+        <h4 style="color: #26803d;">رؤيتنا</h4>
+        <p>الريادة في تطوير الاعمال وتنمية الابداع المعرفي</p>
+        <br />
+        <br />
+        </div>
+        </div>
+        <div class="col">
+        <div class="p-3 border bg-light" style="border: 1px solid #854030 !important;">
+        <h4 style="color :#854030;">رسالتنا</h4>
+        <p>
+        لاسهام في بناء
+        مجتمع الاعمال والمعرفة
+        بجامعة الملك عبد العزيز
+        من خلال استثمار الطاقات
+        الابداعية وتطوير الإمكانات
+        وإقامة الشركات
+        </p>
+        </div>
+        </div>
+        <div class="col">
+        <div class="p-3 border bg-light" style="border: 1px solid #2e4a8a !important;">
+        <h4 style="color: #2e4a8a;">أهدافنا</h4>
+        <p>
+        تحول الجامعة إلى جامعة بحثية متقدمة تعتمد على المعرفة والأساليب التقنية المتطورة
+        <span>للمزيد</span>
+        </p>
+        <br />
+        </div>
+        </div>
+        </div>
+        </div>
+        <hr class="Separator" />
+        <!--
+         *************************************************************************
+         *************************************************************************
+         *************************************************************************
+         ***********************       (Video)        ************************
+         *************************************************************************
+         *************************************************************************
+         *************************************************************************
+    -->
+        <div class="container">
+        <div class="row">
+        <h3 style="text-align: center;">عن الوكالة</h3>
+        <br />
+        <br />
+        <div class="videoContainer">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/s99Od-xZQp8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+        </div>
+        </div>
+        </div>
+        <hr class="Separator" />
+        <!--
+         *************************************************************************
+         *************************************************************************
+         *************************************************************************
+         ***********************       (Sectors)        ************************
+         *************************************************************************
+         *************************************************************************
+         *************************************************************************
+    -->
+        <div class="containe" id="contact">
+        <div class="container-fluid">
+        <h3 style="text-align: center;">قطاعات الوكالة</h3>
+        <br />
+        <br />
+        <div class="row">
+        <!-- <div class="col-md-12 col-sm-12 col-xs-12"> -->
+        <div class="carousel slide" id="Carousel" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+        <button type="button" class="active" data-bs-target="#Carousel" data-bs-slide-to="0">
+        <br />
+        </button>
+        <button type="button" data-bs-target="#Carousel" data-bs-slide-to="1">
+        <br />
+        </button>
+        <button type="button" data-bs-target="#Carousel" data-bs-slide-to="2">
+        <br />
+        </button>
+        <button type="button" data-bs-target="#Carousel" data-bs-slide-to="3">
+        <br />
+        </button>
+        <button type="button" data-bs-target="#Carousel" data-bs-slide-to="4">
+        <br />
+        </button>
+        </div>
+        <div class="carousel-inner">
+        <div class="carousel-item active">
+        <div class="row">
+        <div class="col-md-3 col-xs-6"><a class="thumbnail" href="https://vpbkc.kau.edu.sa/Pages-VPBKC-KAUsfga-AR.aspx"><img style="max-height: 150px;" alt="Image" src="images/l01.png" /></a></div>
+        <div class="col-md-3 col-xs-6"><a class="thumbnail" href="https://vpbkc.kau.edu.sa/Pages-VPBKC-KAUDCSCE-AR.aspx"><img style="max-height: 150px;" alt="Image" src="images/l02.png" /></a></div>
+        <div class="col-md-3 col-xs-6"><a class="thumbnail" href="https://vpbkc.kau.edu.sa/Pages-VPBKC-KAUflc2-AR.aspx"><img style="max-height: 150px;" alt="Image" src="images/l03.png" /></a></div>
+        <div class="col-md-3 col-xs-6"><a class="thumbnail" href="https://vpbkc.kau.edu.sa/Pages-VPBKC-KAUcie-AR.aspx"><img style="max-height: 150px;" alt="Image" src="images/l04.png" /></a></div>
+        </div>
+        </div>
+        <div class="carousel-item">
+        <div class="row">
+        <div class="col-md-3 col-xs-6"><a class="thumbnail" href="https://vpbkc.kau.edu.sa/Pages-VPBKC-KAUppc-AR.aspx"><img style="max-height: 150px;" alt="Image" src="images/l05.png" /></a></div>
+        <div class="col-md-3 col-xs-6"><a class="thumbnail" href="https://vpbkc.kau.edu.sa/Pages-VPBKC-KAUnebosh-AR.aspx"><img style="max-height: 150px;" alt="Image" src="images/l06.png" /></a></div>
+        <div class="col-md-3 col-xs-6"><a class="thumbnail" href="https://vpbkc.kau.edu.sa/Pages-VPBKC-KAUIPC-AR.aspx"><img style="max-height: 150px;" alt="Image" src="images/l07.png" /></a></div>
+        <div class="col-md-3 col-xs-6"><a class="thumbnail" href="https://vpbkc.kau.edu.sa/Pages-VPBKC-KAURACI-AR.aspx"><img style="max-height: 150px;" alt="Image" src="images/l08.png" /></a></div>
+        </div>
+        </div>
+        <div class="carousel-item">
+        <div class="row">
+        <div class="col-md-3 col-xs-6"><a class="thumbnail" href="https://vpbkc.kau.edu.sa/Pages-kau-wadijeddahco-ar.aspx"><img style="max-height: 150px;" alt="Image" src="images/l09.png" /></a></div>
+        <div class="col-md-3 col-xs-6"><a class="thumbnail" href="https://vpbkc.kau.edu.sa/Pages-VPBKC-KAUwaqf-AR.aspx"><img style="max-height: 150px;" alt="Image" src="images/I10.png" /></a></div>
+        <div class="col-md-3 col-xs-6"><a class="thumbnail" href="https://vpbkc.kau.edu.sa/Pages-VPBKC-KAUVpbc2-AR.aspx"><img style="max-height: 150px;" alt="Image" src="https://marz.kau.edu.sa/Images/836/web/InvAR.jpg" /></a></div>
+        <div class="col-md-3 col-xs-6"><a class="thumbnail" href="https://vpbkc.kau.edu.sa/Pages-VPBKC-KAUusr-AR.aspx"><img style="max-height: 150px;" alt="Image" src="images/I12.png" /></a></div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <!--
+         *************************************************************************
+         *************************************************************************
+         *************************************************************************
+         ***********************       (Footer)        ************************
+         *************************************************************************
+         *************************************************************************
+         *************************************************************************
+    -->
+        <div class="container-fluid" style="color: white;">
+        <div class="image_full">
+        <img alt="" width="100%" src="images/footer02.jpg" />
+        </div>
+        <div class="image_mobile">
+        <!-- <img alt="" width="100%" src="https://marz.kau.edu.sa/Images/836/web/footer_Res.jpg" /> -->
+        </div>
+        </div>
+        <script>
+        $(document).ready(function () {
+            $('#Carousel').carousel({
+                interval: 2000
+            })
+        });
+    </script>
+        <hr />
+        <!-- /.row -->
+        <!-- /.container -->
+        <!-- jQuery -->
+        <script src="js/jquery.js"></script>
+        <editor-card style="position:absolute;top:0px;left:0px;z-index:auto;display: block !important;">
+        </editor-card>
+        <div dir="ltr" style="all: initial;">
+        <!--  -->
+    </body>
+</html>
